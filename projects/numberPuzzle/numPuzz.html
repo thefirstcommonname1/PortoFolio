@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+
+    <style media="screen">
+
+          td{
+              height: 50px;
+              width: 50px;
+              text-align: center;
+
+              font-size: 24px;
+              font-weight: 700;
+              color: white;
+              background-color: grey;
+          }
+          table{
+            position: absolute;
+            background-color: white;
+            top: 50%;
+            left:50%;
+            transform: translate(-50% , -50%);
+
+          }
+
+          #winBanner{
+              display: none;
+              position: absolute;
+              height: 200px;
+              width: 200px;
+              background-color: white;
+              top:50%;
+              left: 50%;
+              transform: translate(-50% , -50%);
+          }
+    </style>
+
+  </head>
+
+  <body>
+      <div id="game">
+          <div id="levelSelection">
+              <br>
+              TODO <br> <h1>BISHAV</h1>
+              <br>
+            ---  tyo cube 2X2 or 3X3 or 4X4 or 5X5 huna sakcha tei anusar box ko size select gara hai appropriately ... now it is 50px per box
+              <br>
+              --- if u press "s" then game is won .. this is short cut to winning for now..
+              <br>
+              --- dont worry about javascript logic it works ( for 3X3 cube for now ... need a bit cleaning as well)
+              <br>
+              ---- u know what Dont touch javascript as a matter of fact
+              <br>
+              --- radio button for difficulty level edit this  ... Danger styling hai!!
+              <br>
+
+              <input type="radio" name="" value="2">
+              <input type="radio" name="" value="3">
+              <input type="radio" name="" value="4">
+              <input type="radio" name="" value="5">
+              <button type="button" name="button">Generate Matrix</button>
+          </div>
+            <table>
+                <tr>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+        </table>
+
+      </div>
+
+
+      <div id = "winBanner">
+          <h2>Congratulations!! you won</h2>
+          <button type="button" name="button" id="newGame"> new Game</button>
+      </div>
+
+      <script src="numPuzz.js">
+      </script>
+  </body>
+</html>
