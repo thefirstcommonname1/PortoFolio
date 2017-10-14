@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <style media="screen">
+      table{
+        margin-left: auto;
+        margin-right: auto;
+
+      }
+        td{ /*edit this individual table elements*/
+          height: 50px; width: 50px;
+          background-color: grey;
+          font-size: 24px;
+        }
+        .clicked{/*edit this --- td will have this property when clicked but not won*/
+            background-color: cyan;
+            color: white;
+        }
+        .wonGold{/*edit this --- td will have this property when that click was the winning click*/
+          background-color: gold;
+        }
+        .lostRed{/*edit this --- td will have this property when that click was the losing one*/
+          background-color: red;
+        }
+
+        #movesLeft{/*edit this --> score counter*/
+            position: absolute;
+            left: 0;
+            top: 0;
+            display: inline-block;
+            width: 100px; height: 100px;
+            border: 2px solid black;
+            text-align: center;
+
+        }
+        #winBanner, #loseBanner{/*edit this --> pops when game won*/
+            display: none;
+            position: absolute;
+            height: 200px;
+            width: 200px;
+            background-color: white;
+            top:50%;
+            left: 50%;
+            transform: translate(-50% , -50%);
+        }
+
+    </style>
+  </head>
+  <body>
+      <table id="myTable">
+        <tr class="rows">
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+
+      </table>
+
+      <span id="movesLeft"> Moves Left <br> <h2 id="score"></h2></span><!-- score counter -->
+
+      <div id = "winBanner"><!-- pops when game won -->
+          <h2>Congratulations!! you won</h2>
+          <button type="button" name="button" id="wonRetry"> new Game</button>
+      </div>
+
+      <div id = "loseBanner"><!-- pops when game lost -->
+          <h2>Not this time Eh! Lets have another round</h2>
+          <button type="button" name="button" id="lostRetry"> Retry </button>
+      </div>
+
+
+
+      <script src="minesweeperLogic.js">
+
+      </script>
+
+  </body>
+</html>
